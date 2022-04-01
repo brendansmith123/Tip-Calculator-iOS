@@ -28,7 +28,7 @@
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bill Amount" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IKn-RR-EN8">
                                                         <rect key="frame" x="0.0" y="0.0" width="125" height="34"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                         <color key="textColor" name="tcWhite"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -47,7 +47,7 @@
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tip%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tb8-IE-dkw">
                                                         <rect key="frame" x="0.0" y="0.0" width="116" height="31"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
                                                         <color key="textColor" name="tcWhite"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -116,8 +116,9 @@
                                     </switch>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tip Calculator" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wB7-ms-wnO">
                                         <rect key="frame" x="24" y="44" width="297" height="31"/>
+                                        <color key="tintColor" name="tcWhite"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
+                                        <color key="textColor" name="tcDarkBlue"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
@@ -174,7 +175,8 @@
                                         </subviews>
                                     </stackView>
                                 </subviews>
-                                <color key="backgroundColor" name="tcSeafoamGreen"/>
+                                <color key="backgroundColor" name="tcDarkBlue"/>
+                                <color key="tintColor" name="tcDarkBlue"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="NNs-NZ-5Vi" secondAttribute="trailing" constant="22" id="Ep2-rc-6zu"/>
                                     <constraint firstItem="NNs-NZ-5Vi" firstAttribute="leading" secondItem="H7r-fv-gsh" secondAttribute="leading" constant="22" id="cqy-BB-cbh"/>
@@ -211,12 +213,16 @@
                         <outlet property="billAmountTextField" destination="d5i-r7-51U" id="LJp-dr-kU6"/>
                         <outlet property="headerView" destination="8bC-Xf-vdC" id="9sF-dd-wcb"/>
                         <outlet property="inputCardView" destination="56V-AM-3ry" id="25K-XR-zpF"/>
+                        <outlet property="outputCardView" destination="H7r-fv-gsh" id="gZo-Lk-Wfl"/>
                         <outlet property="resetButton" destination="Te7-Ix-XZj" id="ado-Jj-5tX"/>
                         <outlet property="themeSwitch" destination="bm2-xf-vtm" id="c3J-CL-I6d"/>
-                        <outlet property="tipAmountLabel" destination="e8T-as-cPv" id="9hn-kf-NzK"/>
+                        <outlet property="tipAmountLabel" destination="e8T-as-cPv" id="X5X-Qc-erP"/>
+                        <outlet property="tipAmountTitleLabel" destination="OPj-gJ-F6g" id="wo9-M9-Hrk"/>
                         <outlet property="tipPercentChanged" destination="BMy-cR-jgo" id="bwz-j8-O9P"/>
                         <outlet property="tipPercentSegmentedControl" destination="BMy-cR-jgo" id="nsb-DO-vd3"/>
-                        <outlet property="totalAmountLabel" destination="udM-b9-xHX" id="NJF-Ls-4wZ"/>
+                        <outlet property="titleLabel" destination="wB7-ms-wnO" id="CRE-SG-0bx"/>
+                        <outlet property="totalAmountLabel" destination="udM-b9-xHX" id="FZd-ZW-lLJ"/>
+                        <outlet property="totalAmountTitleLabel" destination="lyn-hC-rJV" id="1EX-mK-Yrc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
